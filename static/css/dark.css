@@ -1,0 +1,29 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+#toggleModeBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s !important;
+}
+
+#toggleModeBtn:hover {
+    background-color: #48abcf !important;
+}
+
+body.night-mode {
+    background-color: #333;
+    color: #fff;
+}
