@@ -86,11 +86,26 @@
     <i class="fas fa-moon"></i>
 </button>
 <script>
-    const toggleModeBtn = document.getElementById('toggleModeBtn');
-    const body = document.body;
+    document.addEventListener("DOMContentLoaded", function () {
+        const storedMode = localStorage.getItem("mode");
+        const body = document.body;
 
-    toggleModeBtn.addEventListener('click', () => {
-        body.classList.toggle('night-mode');
+        if (storedMode) {
+            body.classList.add(storedMode);
+        }
+    
+        // Function to toggle between light and dark mode
+        function toggleMode() {
+            body.classList.toggle("night-mode");
+            const currentMode = body.classList.contains("night-mode") ? "night-mode" : "";
+            localStorage.setItem("mode", currentMode);
+        }
+
+        const toggleModeBtn = document.getElementById("toggleModeBtn");
+        toggleModeBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            toggleMode();
+        });
     });
 </script>
 

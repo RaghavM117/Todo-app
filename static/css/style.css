@@ -21,8 +21,8 @@
     --light: #f8f9fa;
     --dark: #212529;
     --primary-background: #cfe2ff;
-    --dark-pink: #f14182;
-    --light-pink: #f16498;
+    --dark-pink: #9f41f1;
+    --light-pink: #880535;
 }
 
 * {
@@ -35,7 +35,7 @@
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    background: #f16498;
+    background: #49036e;
     color: #fff;
     padding: 1%;
 }
@@ -128,7 +128,7 @@ a {
 .todo-container {
     /* border: 2px solid var(--gray-dark); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    background-color: pink;
+    background-color: rgb(127, 138, 223);
     width: 50%;
     margin: 0 0 15px 27.5%;
 }
